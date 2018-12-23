@@ -92,3 +92,7 @@ ITEM_PIPELINES = {
 # 搜索商品关键字
 KEYWORDS = ['iPad']
 MAX_PAGE = 100
+
+# MONGO_URI配置
+MONGO_URI = 'localhost'
+MONGO_DB = 'scrapy_taobao'
