@@ -14,3 +14,6 @@ class SeleniumMiddleware():
         self.browser = webdriver.Chrome()
         self.browser.set_window_size(1400, 700)
         self.wait = WebDriverWait(self.browser, self.timeout)
+
+    def __del__(self):
+        self.browser.close()
